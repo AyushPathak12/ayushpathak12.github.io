@@ -4514,10 +4514,22 @@ a.link-style3 {
   text-align: center;
 }
 
+#submitDiv {
+  position: relative;
+}
+
+#loader_ball {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
 #submitBtn {
   cursor: pointer;
   width: 100%;
-  background-color: rgb(125, 215, 130);
+  background-color: #7dd782;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 8px;
@@ -4525,6 +4537,40 @@ a.link-style3 {
   outline: none;
 }
 
+.container-ball {
+  --uib-size: 40px;
+  --uib-color: black;
+  --uib-speed: .8s;
+  --uib-bg-opacity: 0.1;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  transform-origin: center;
+  animation: rotate var(--uib-speed) linear infinite;
+  will-change: transform;
+  overflow: visible;
+}
+
+.car {
+  fill: none;
+  stroke: var(--uib-color);
+  stroke-dasharray: 25, 75;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  transition: stroke 0.5s ease;
+}
+
+.track {
+  fill: none;
+  stroke: var(--uib-color);
+  opacity: var(--uib-bg-opacity);
+  transition: stroke 0.5s ease;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .fr-view button.fr-rounded,
 .fr-view input.fr-rounded,
