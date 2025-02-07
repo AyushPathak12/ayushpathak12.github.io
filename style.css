@@ -4514,6 +4514,18 @@ a.link-style3 {
   text-align: center;
 }
 
+#submitBtn {
+  cursor: pointer;
+  width: 100%;
+  background-color: rgb(125, 215, 130);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+
 .fr-view button.fr-rounded,
 .fr-view input.fr-rounded,
 .fr-view textarea.fr-rounded {
