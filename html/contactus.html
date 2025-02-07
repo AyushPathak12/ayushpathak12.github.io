@@ -133,7 +133,7 @@
 
 
             <!-- <input type="submit" value="Submit">-->
-            <button type="submit">Submit</button>
+            <button type="submit" id="submitBtn">Submit</button>
         </form>
 
     </div>
@@ -248,7 +248,7 @@
                 });
 
                 if (response.ok) {
-                    alert('Email sent successfully!');
+                    alert('Message sent successfully!');
                     e.target.reset();
                 } else {
                     alert('Failed to send email');
